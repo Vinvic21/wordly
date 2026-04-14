@@ -31,7 +31,6 @@ async function fetchData(event) {
 function displayWordData(entry) {
     resultsContainer.innerHTML = ""; 
     const header = document.createElement("div");
-    // header.className = "word-header";
     header.innerHTML = `
         <h2>${entry.word}</h2>
         <p class="phonetic">${entry.phonetic || ""}</p>
