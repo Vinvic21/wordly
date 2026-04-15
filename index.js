@@ -14,7 +14,7 @@ async function fetchData(event) {
         const response = await fetch(`${BASE_URL}${word}`);
         
         if (!response.ok) {
-        throw new error("We couldn't find that word. Try another!");
+        showError("We couldn't find that word. Try another!");
             return;
         }
 
